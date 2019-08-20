@@ -1,0 +1,36 @@
+
+import java.util.Scanner;
+
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+/**
+ *
+ * @author gustavo.moreira
+ */
+public class Main {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+        
+        Scanner sc = new Scanner(System.in);
+        
+        float A[] = new float[100];
+        
+        for(int i = 0; i < A.length; i++){
+            A[i] = sc.nextFloat();
+        }
+        
+        for(int i = 0; i < A.length; i++){
+            if(A[i]<=10){
+                System.out.printf("A[%d] = %.1f\n", i, A[i]);
+            }
+        }        
+    }    
+}
